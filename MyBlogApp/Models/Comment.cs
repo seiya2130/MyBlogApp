@@ -19,7 +19,7 @@ namespace MyBlogApp.Models
 
         [Required]
         [DisplayName("投稿日")]
-        public string Created { get; set; }
+        public DateTime Created { get; set; }
 
         public virtual Article Article { get; set; }
 
