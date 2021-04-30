@@ -21,7 +21,11 @@ namespace MyBlogApp.Models
         public string Body { get; set; }
 
         [DisplayName("投稿日")]
-        public DateTime Modified　{ get; set; }
+        public DateTime Created　{ get; set; }
+
+
+        [DisplayName("更新日")]
+        public DateTime Modified { get; set; }
 
         public virtual Category Category { get; set; }
 
