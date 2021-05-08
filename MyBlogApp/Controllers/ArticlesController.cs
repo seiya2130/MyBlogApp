@@ -187,7 +187,7 @@ namespace MyBlogApp.Controllers
                 db.Entry(category).State = EntityState.Modified;
             }
 
-            article.Commests.Clear();
+            article.Comments.Clear();
 
             db.Articles.Remove(article);
             db.SaveChanges();

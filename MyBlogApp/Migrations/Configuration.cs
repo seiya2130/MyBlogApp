@@ -11,6 +11,7 @@
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
+            //ContextKey = "MyBlogApp.Models.BlogContext";
         }
 
         protected override void Seed(MyBlogApp.Models.BlogContext context)

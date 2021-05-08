@@ -107,7 +107,7 @@ namespace MyBlogApp.Models
 
         public override bool ValidateUser(string username, string password)
         {
-            if("admin".Equals(username) && "passwrod".Equals(password))
+            if("admin".Equals(username) && "password".Equals(password))
             {
                 return true;
             }
