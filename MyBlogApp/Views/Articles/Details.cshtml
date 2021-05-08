@@ -48,12 +48,12 @@
 
 
         <div class="form-group">
-            @Html.TextArea("Body", "", new { @class = "from-control", placeholder = "コメント", rows = 3 });
+            @Html.TextArea("Body", "", new { @class = "form-control", placeholder = "コメント", rows = 3 });
         </div>
         <input type="submit" value="投稿" class="btn btn-default" />
     }
 
-    @foreach(var item in Model.Commests)
+    @foreach(var item in Model.Comments)
     {
         <div class="panel panel-default">
             <div class="panel-body">
@@ -61,8 +61,8 @@
             </div>
             <div class="panel-footre text-right">
                 <span class="text-muted">
-                    @Html.DisplayNameFor(mopdel => item.Created);
-                    @Html.DisplayFor(mopdel => item.Created);
+                    @Html.DisplayNameFor(model => item.Created);
+                    @Html.DisplayFor(model => item.Created);
                 </span>
                 @if (User.IsInRole("Owners"))
                 {

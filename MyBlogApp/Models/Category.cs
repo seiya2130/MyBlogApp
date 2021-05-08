@@ -14,6 +14,7 @@ namespace MyBlogApp.Models
 
         [Required]
         [Index(IsUnique = true)]
+        [StringLength(200)]
         [DisplayName("カテゴリー")]
         public string CategoryName { get; set; }
 

@@ -29,7 +29,7 @@ namespace MyBlogApp.Models
 
         public virtual Category Category { get; set; }
 
-        public virtual ICollection<Comment> Commests { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
 
         [NotMapped]
         [DisplayName("カテゴリー")]

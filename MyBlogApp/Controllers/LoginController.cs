@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MyBlogApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MyBlogApp.Controllers
 {   
@@ -22,10 +24,10 @@ namespace MyBlogApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(this.membershipProvider.validateUser(model.UserName, model.Password))
+                if(this.membershipProvider.ValidateUser(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);
-                    return RedirectToAction("Index", "Articels");
+                    return RedirectToAction("Index", "Articles");
                 }
             }
 
